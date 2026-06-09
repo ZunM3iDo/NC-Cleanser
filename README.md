@@ -1,5 +1,6 @@
 # NC-Cleanser
-ニコニコ生放送専用のNGフィルター搭載・オーバーレイ対応のコメントビューア
+
+**NGフィルター搭載・オーバーレイ対応のコメントビューア**
 
 ## ダウンロード
    右側のReleasesからZIPファイルをダウンロードしてください
@@ -13,11 +14,11 @@ NC-Cleanserは、配信画面やゲーム画面上にコメントを直接表示
 コメントの投稿はニコ生公式プレイヤーから行ってください。
 ニコ生でアニメ放送を視聴することを想定して製作しています。（作者自身がそのような使い方をしたいがため）
 
-**強力なNGフィルター**: 単純なキーワード指定だけでなく、正規表現に対応したNGワード設定や、特定のNGユーザーの非表示機能を搭載。同じコメントを連投するユーザーを検知して自動的にNGユーザーに登録する機能付き。
-**透過オーバーレイ & 最前面表示**: 背景を透明にして常に最前面に表示できるため、ゲームや動画の邪魔にならずにコメントを流せます。
-**マウスパススルー機能**: アプリを最前面に配置したまま、背後のゲームやアプリを直接操作可能。グローバルショートカット `Ctrl+Alt+Space` でいつでも即座にクリック透過のオン/オフを切り替えられます！
-**スマートなウィンドウ収納**: 邪魔な時はワンクリックでコントロールバーだけに折りたたみ（収納）が可能。
-**高度なカスタマイズ性**: ウィンドウの位置やサイズのプリセット保存、フォント変更、背景の不透明度調整など、自分好みの環境を構築できます。
+- **強力なNGフィルター**: 単純なキーワード指定だけでなく、正規表現に対応したNGワード設定や、特定のNGユーザーの非表示機能を搭載。同じコメントを連投するユーザーを検知して自動的にNGユーザーに登録する機能付き。
+- **透過オーバーレイ & 最前面表示**: 背景を透明にして常に最前面に表示できるため、ゲームや動画の邪魔にならずにコメントを流せます。
+- **マウスパススルー機能**: アプリを最前面に配置したまま、背後のゲームやアプリを直接操作可能。グローバルショートカット `Ctrl+Alt+Space` でいつでも即座にクリック透過のオン/オフを切り替えられます！
+- **スマートなウィンドウ収納**: 邪魔な時はワンクリックでコントロールバーだけに折りたたみ（収納）が可能。
+- **高度なカスタマイズ性**: ウィンドウの位置やサイズのプリセット保存、フォント変更、背景の不透明度調整など、自分好みの環境を構築できます。
 
 ## 使い方
 1. **コメントの取得開始**
@@ -51,3 +52,78 @@ NC-Cleanserは、配信画面やゲーム画面上にコメントを直接表示
 
 ### 3. 免責事項
 - 本アプリの利用によって生じた、いかなる損害・不利益についても作者は一切の責任を負いません。すべて自己責任でご利用ください。
+
+
+
+## ライセンス表記 (Third-Party Licenses)
+本プロジェクト（NC-Cleanser）は、以下のオープンソースソフトウェアおよびライブラリを使用しています。各ライブラリのライセンス条項に基づき、著作権表示および許諾表示をここに掲載します。
+### フロントエンド (Frontend)
+* **Svelte / SvelteKit**
+  * 公式サイト: [svelte.dev](https://svelte.dev/)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT)
+  * 著作権: Copyright (c) svelte contributors
+* **Vite**
+  * 公式サイト: [vite.dev](https://vite.dev/)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT)
+  * 著作権: Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
+* **TypeScript**
+  * 公式サイト: [typescriptlang.org](https://www.typescriptlang.org/)
+  * ライセンス: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) Microsoft Corporation.
+### バックエンド (Backend / Rust)
+* **Tauri (tauri, tauri-build, tauri-plugins)**
+  * 公式サイト: [tauri.app](https://tauri.app/)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) (Dual licensed)
+  * 著作権: Copyright (c) 2017-present Tauri Apps team
+* **Tokio**
+  * 公式サイト: [tokio.rs](https://tokio.rs/)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT)
+  * 著作権: Copyright (c) 2025 Tokio Contributors
+* **tokio-tungstenite**
+  * リポジトリ: [github.com/snapview/tokio-tungstenite](https://github.com/snapview/tokio-tungstenite)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT)
+  * 著作権: Copyright (c) tokio-tungstenite Contributors
+* **Serde**
+  * 公式サイト: [serde.rs](https://serde.rs/)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) 2014 Erick Tryzelaar and David Tolnay
+* **serde_json**
+  * リポジトリ: [github.com/serde-rs/json](https://github.com/serde-rs/json)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) 2014 Erick Tryzelaar and David Tolnay
+* **Regex**
+  * リポジトリ: [github.com/rust-lang/regex](https://github.com/rust-lang/regex)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) 2014 The Rust Project Developers
+* **Aho-Corasick**
+  * リポジトリ: [github.com/BurntSushi/aho-corasick](https://github.com/BurntSushi/aho-corasick)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Unlicense](https://unlicense.org/)
+  * 著作権: Copyright (c) 2014 Andrew Gallant
+* **Reqwest**
+  * リポジトリ: [github.com/seanmonstar/reqwest](https://github.com/seanmonstar/reqwest)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) 2016 Sean McArthur
+* **prost (prost, prost-types)**
+  * リポジトリ: [github.com/tokio-rs/prost](https://github.com/tokio-rs/prost)
+  * ライセンス: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) 2017 Dan Burkert
+* **Scraper**
+  * リポジトリ: [github.com/causal-agent/scraper](https://github.com/causal-agent/scraper)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT)
+  * 著作権: Copyright (c) 2016 Ruud van Asseldonk
+* **Bytes**
+  * リポジトリ: [github.com/tokio-rs/bytes](https://github.com/tokio-rs/bytes)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT)
+  * 著作権: Copyright (c) 2018 Carl Lerche
+* **Anyhow**
+  * リポジトリ: [github.com/dtolnay/anyhow](https://github.com/dtolnay/anyhow)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) 2019 David Tolnay
+* **Notify**
+  * リポジトリ: [github.com/notify-rs/notify](https://github.com/notify-rs/notify)
+  * ライセンス: [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/)
+  * 著作権: Copyright (c) Felix B. and contributors
+* **windows-sys**
+  * リポジトリ: [github.com/microsoft/windows-rs](https://github.com/microsoft/windows-rs)
+  * ライセンス: [MIT License](https://opensource.org/licenses/MIT) / [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+  * 著作権: Copyright (c) Microsoft Corporation.
